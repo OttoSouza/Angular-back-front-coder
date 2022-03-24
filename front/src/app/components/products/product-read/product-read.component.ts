@@ -20,7 +20,6 @@ export class ProductReadComponent implements OnInit {
   readProducts() {
     this.service.read().subscribe((response) => {
       this.products = response;
-      console.log(this.products);
     });
   }
 
